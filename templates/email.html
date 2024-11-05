@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ACEplus</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-collapse: collapse;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #590B71, #7A147D, #7F1781, #6A17B6, #6A1398, #5A0C8E);
+            padding: 20px;
+            padding-bottom: 0;
+            text-align: center;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .content {
+            padding: 20px;
+            color: #4C4C4C;
+            font-weight: 500;
+        }
+
+        .content p,
+        .content ol {
+            text-align: left;
+            margin: 20px 0;
+            padding-left: 20px;
+            font-weight: 500;
+        }
+
+        .content a {
+            color: #5F68FF;
+        }
+
+        .footer {
+            text-align: left;
+            padding: 20px;
+            color: #4C4C4C;
+            font-weight: 500;
+        }
+
+        .footer img {
+            margin-left: 20px;
+        }
+
+        .contact-section {
+            border-top: 1px solid #dddddd;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center; /* Center the contact info */
+            font-size: small;
+            color: #4C4C4C;
+            font-weight: 500;
+            padding: 0 30px;
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+            white-space: nowrap;
+        }
+
+        .contact-info img {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .contact-link {
+            text-decoration: none;
+            color: #4C4C4C;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <table class="header" width="100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <h1><span style="font-weight: bold;">ACE</span><span style="font-weight: normal;">plus</span></h1>
+                            <p style="margin-top:-20px; font-size: 8px; font-weight: 300;">Achieve · Confidence · English</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="content" width="100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="font-weight: 500; font-size: 16px;">
+                            <p>Subject: Welcome to ACEplus</p>
+                            <p>Dear <strong>{{ parent_name }}</strong>,</p>
+                            <p>Welcome to ACEplus – a new and unique learning platform that teaches students to Achieve necessary life skills and be more Confident while communicating in English.</p>
+                            <p>This app will help your child develop 5 key 21st-century success skills:
+                                    i. Life Skills,
+                                    ii. Cognitive Skills,
+                                    iii. Spoken English Skills,
+                                    iv. Interpersonal Skills,
+                                    v. Communication Skills
+                            </p>
+                            <p>This will be done through friendly and interactive videos, scientifically crafted exercises, and colourful learning-based games, reinforced by LIVE feedback sessions by specially trained skill coaches.</p>
+
+                            <p>Here are your registration details:</p>
+                            <ul style="list-style-type: none; font-weight: 400; padding-left: 20px;">
+                                <li style="padding-left: 0; margin-left: 0;"><strong>Name:</strong> {{ parent_name }} </li>
+                                <li style="padding-left: 0; margin-left: 0;"><strong>Mobile No:</strong> {{ mobile_no }} </li>
+                                <li style="padding-left: 0; margin-left: 0;"><strong>Email Address:</strong> {{ email }} </li>
+                            </ul>
+
+                            <p>Thank you for signing up for our New ACEplus App. Please proceed to register your child/children if you have not already done so.</p>
+                            <p>Warm Regards,<br>Team ACEplus</p>
+        
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="footer" width="100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <img src="https://i.postimg.cc/rmkTLtYm/aceplus-new-logo.png" alt="ACEplus Logo" width="100" height="auto">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="contact-section" width="100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <h4 style="font-weight: normal;">For any queries, contact us at</h4>
+                            <div class="contact-info">
+                                <div>
+                                    <img src="https://img.icons8.com/ios-filled/16/7950F2/phone.png" alt="Phone Icon">
+                                    <a href="tel:+919007858855" class="contact-link">+91 9007858855</a>
+                                </div>
+                                <div>
+                                    <img src="https://img.icons8.com/ios-filled/16/7950F2/new-message.png" alt="Email Icon">
+                                    <a href="mailto:hello@aceplus.com" class="contact-link">hello@aceplus.com</a>
+                                </div>
+                                <div>
+                                    <img src="https://img.icons8.com/ios-filled/16/7950F2/geography.png" alt="Website Icon">
+                                    <a href="https://aceplus.in" class="contact-link">aceplus.in</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
