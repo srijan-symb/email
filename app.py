@@ -62,7 +62,7 @@ def perform_signup(name, email, password, mobile_no):
         "name": name,
         "email": email,
         "password": password,
-        "mobile_no": mobile_no,
+        "mobile_no": "1231231231",
     }
     try:
         logging.info(f"Sending POST to signup API with payload: {payload}")
@@ -83,7 +83,7 @@ def local_signup():
         name = data.get("name")
         email = data.get("email")
         password = data.get("password")
-        mobile_no = data.get("mobile_no", None)
+        mobile_no = "1231231231"
 
         if not name or not email or not password or not mobile_no:
             logging.warning("Missing required fields in signup request")
